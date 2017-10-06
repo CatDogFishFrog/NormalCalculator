@@ -53,15 +53,11 @@ namespace NormalCalculator
         {
             try
             {
-                if (TextPanelCalc.Text != "")
-                {
                     TextPanelCalc.Text = Convert.ToString(-Convert.ToDouble(TextPanelCalc.Text));
-                }
-                else return;
             }
             catch (Exception)
             {
-
+                return;
             }
 
             
@@ -75,22 +71,20 @@ namespace NormalCalculator
 
         private void VKvadrateLol_Click(object sender, RoutedEventArgs e)
         {
-            if (TextPanelCalc.Text != "")
+            try
             {
-                if (TextPanelCalc.Text.Contains("БЕСКОНЕЧНОСТЬ НЕ ПРЕДЕЛ!"))
-                {
-                    return;
-                }
-                else
-                {
-                    double g = Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
-                    minus = gam = gay = plus = false;
-                    if (g > 1.8e300 || g < -1.8e300)
-                        TextPanelCalc.Text = "БЕСКОНЕЧНОСТЬ НЕ ПРЕДЕЛ!";
-                    else TextPanelCalc.Text = Convert.ToString(g);
-                }
+                double g = Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
+                minus = gam = gay = plus = false;
+                if (g > 1.8e300 || g < -1.8e300)
+                    TextPanelCalc.Text = "БЕСКОНЕЧНОСТЬ НЕ ПРЕДЕЛ!";
+                else TextPanelCalc.Text = Convert.ToString(g);
             }
-            else return;
+            catch (Exception)
+            {
+                return;
+            }
+
+                
         }
 
         private void CleanText_Click(object sender, RoutedEventArgs e)
@@ -107,7 +101,7 @@ namespace NormalCalculator
 
         private void Plus_Click(object sender, RoutedEventArgs e)
         {
-            if (TextPanelCalc.Text != "")
+            try
             {
                 if (temp_n != 0)
                 {
@@ -123,14 +117,16 @@ namespace NormalCalculator
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
-
             }
-            else return;
+            catch (Exception)
+            {
+                return;
+            }
         }
 
         private void Minus_Click(object sender, RoutedEventArgs e)
         {
-            if (TextPanelCalc.Text != "")
+            try
             {
                 if (temp_n != 0)
                 {
@@ -146,14 +142,16 @@ namespace NormalCalculator
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
-
             }
-            else return;
+            catch (Exception)
+            {
+                return;
+            }
         }
 
         private void Multiply_Click(object sender, RoutedEventArgs e)
         {
-            if (TextPanelCalc.Text != "")
+            try
             {
                 if (temp_n != 0)
                 {
@@ -169,14 +167,17 @@ namespace NormalCalculator
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
-
             }
-            else return;
+            catch (Exception)
+            {
+                return;
+            }
         }
 
         private void Delenie_Click(object sender, RoutedEventArgs e)
         {
-            if (TextPanelCalc.Text != "")
+
+            try
             {
                 if (temp_n != 0)
                 {
@@ -192,14 +193,16 @@ namespace NormalCalculator
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
-
             }
-            else return;
+            catch (Exception)
+            {
+                return;
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (TextPanelCalc.Text != "")
+            try
             {
                 if (plus)
                 {
@@ -230,17 +233,23 @@ namespace NormalCalculator
                     temp_n = 0;
                 }
             }
-            else return;
+            catch (Exception)
+            {
+                return;
+            }
         }
 
         private void KorenKvadrat_Click(object sender, RoutedEventArgs e)
         {
-            if(TextPanelCalc.Text != "")
+            try
             {
                 plus = minus = gam = gay = false;
                 TextPanelCalc.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(TextPanelCalc.Text)));
-            } else return;
-            
+            }
+            catch (Exception)
+            {
+                return;
+            }
         }
 
         private void NumPI_Click(object sender, RoutedEventArgs e)
@@ -261,7 +270,7 @@ namespace NormalCalculator
             }
             catch(Exception)
             {
-
+                return;
             }
         }
 
@@ -277,7 +286,7 @@ namespace NormalCalculator
             }
             catch (Exception)
             {
-
+                return;
             }
         }
 
@@ -293,7 +302,7 @@ namespace NormalCalculator
             }
             catch (Exception)
             {
-
+                return;
             }  
         }
 
@@ -309,7 +318,7 @@ namespace NormalCalculator
             }
             catch (Exception)
             {
-
+                return;
             }
         }
 
@@ -325,7 +334,7 @@ namespace NormalCalculator
             }
             catch (Exception)
             {
-
+                return;
             }
         }
 
@@ -341,7 +350,7 @@ namespace NormalCalculator
             }
             catch (Exception)
             {
-
+                return;
             }
         }
     }

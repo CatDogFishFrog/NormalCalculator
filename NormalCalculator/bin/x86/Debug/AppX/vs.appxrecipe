@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-06T08:07:42.276</Modified>
+      <Modified>2017-10-06T08:25:05.874</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\NormalCalculator.exe">
       <PackagePath>entrypoint\NormalCalculator.exe</PackagePath>
-      <Modified>2017-10-06T08:07:41.712</Modified>
+      <Modified>2017-10-06T08:25:05.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vadim\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-06T08:07:42.110</Modified>
+      <Modified>2017-10-06T08:25:05.690</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\Core\NormalCalculator.exe">
       <PackagePath>NormalCalculator.exe</PackagePath>
-      <Modified>2017-10-06T08:07:42.272</Modified>
+      <Modified>2017-10-06T08:25:05.868</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
