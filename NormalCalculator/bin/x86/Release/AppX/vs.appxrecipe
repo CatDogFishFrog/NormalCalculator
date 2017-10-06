@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-06T13:42:10.759</Modified>
+      <Modified>2017-10-06T15:06:25.264</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -75,20 +75,20 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Release\ilc\NormalCalculator.dll">
       <PackagePath>NormalCalculator.dll</PackagePath>
-      <Modified>2017-10-06T13:42:10.649</Modified>
+      <Modified>2017-10-06T15:06:25.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Release\ilc\NormalCalculator.exe">
       <PackagePath>NormalCalculator.exe</PackagePath>
-      <Modified>2017-10-06T13:42:10.746</Modified>
+      <Modified>2017-10-06T15:06:25.256</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Release\ilc\NormalCalculator.pdb">
       <PackagePath>NormalCalculator.pdb</PackagePath>
-      <Modified>2017-10-06T13:42:10.736</Modified>
+      <Modified>2017-10-06T15:06:25.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-06T13:41:54.515</Modified>
+      <Modified>2017-10-06T15:06:07.660</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

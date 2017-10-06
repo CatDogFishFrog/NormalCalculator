@@ -9,6 +9,7 @@ sg.exe          : 1.7.25531.01 built by: PROJECTNGDR2
 Framework:
 clrcompression.dll                                     : 1.0.24214.00 built by: PROJECTKREL
 Microsoft.CSharp.dll                                   : 1.0.24212.01
+Microsoft.Toolkit.Uwp.Notifications.dll                : 2.0.0.0
 Microsoft.VisualBasic.dll                              : 1.0.24212.01
 Microsoft.Win32.Primitives.dll                         : 1.0.24212.01
 mscorlib.dll                                           : 4.6.24301.0

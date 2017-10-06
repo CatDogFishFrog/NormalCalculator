@@ -37,6 +37,7 @@
         <Button x:Name="Zero" Content="0" HorizontalAlignment="Left" Margin="105,359,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Zero_Click"/>
         <Button x:Name="Koma" Content="," HorizontalAlignment="Left" Margin="200,359,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Koma_Click"/>
         <Button Content="=" HorizontalAlignment="Left" Margin="295,359,0,0" VerticalAlignment="Top" Height="90" Width="185" FontSize="48" Click="Button_Click"/>
-
+        <Button x:Name="Nitific" Content="Уведомление" HorizontalAlignment="Left" Margin="485,359,0,0" VerticalAlignment="Top" Height="90" Width="320" FontSize="36" Click="Nitific_Click"/>
+        
     </Grid>
 </Page>

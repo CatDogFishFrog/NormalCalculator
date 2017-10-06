@@ -8,7 +8,9 @@
 /multiFile
 /sharedGenericsMode StandardUniversalGenericsHeuristics
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\NormalCalculator.ilexe"
+/in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Uwp.Notifications.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\NormalCalculator.McgInterop.ildll"
+/in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\QueryString.NETCore.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.AppContext.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Collections.NonGeneric.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.ComponentModel.ildll"
@@ -49,8 +51,10 @@
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Text.Encoding.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Threading.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Threading.Overlapped.ildll"
+/in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Threading.Tasks.Extensions.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Threading.Tasks.ildll"
 /in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Threading.Tasks.Parallel.ildll"
+/in "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\ILTransformed\System.Xml.ReaderWriter.ildll"
 /out "C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x86\Release\ilc\intermediate\MDIL\NormalCalculator.mdilexe"
 /iltoc "C:\Users\vadim\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.7.0\tools\SharedLibrary\ret\ILToc\System.Collections.iltoc*SharedLibrary"
 /iltoc "C:\Users\vadim\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.7.0\tools\SharedLibrary\ret\ILToc\System.Collections.Concurrent.iltoc*SharedLibrary"
