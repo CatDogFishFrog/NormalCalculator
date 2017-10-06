@@ -18,10 +18,7 @@ namespace NormalCalculator
 {
     public sealed partial class MainPage : Page
     {
-        bool plus = false;
-        bool minus = false;
-        bool gam = false;
-        bool gay = false;
+        byte deystvie;
         double temp_n;
 
         public MainPage()
@@ -74,7 +71,7 @@ namespace NormalCalculator
             try
             {
                 double g = Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
-                minus = gam = gay = plus = false;
+                deystvie = 0;
                 if (g > 1.8e300 || g < -1.8e300)
                     TextPanelCalc.Text = "БЕСКОНЕЧНОСТЬ НЕ ПРЕДЕЛ!";
                 else TextPanelCalc.Text = Convert.ToString(g);
@@ -96,7 +93,7 @@ namespace NormalCalculator
         {
             TextPanelCalc.Text = "";
             temp_n = 0;
-            plus = minus = gam = gay = false;
+            deystvie = 0;
         }
 
         private void Plus_Click(object sender, RoutedEventArgs e)
@@ -105,15 +102,13 @@ namespace NormalCalculator
             {
                 if (temp_n != 0)
                 {
-                    plus = true;
-                    minus = gay = gam = false;
+                    deystvie = 1;
                     temp_n += Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
-                    plus = true;
-                    minus = gay = gam = false;
+                    deystvie = 1;
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
@@ -130,15 +125,13 @@ namespace NormalCalculator
             {
                 if (temp_n != 0)
                 {
-                    minus = true;
-                    plus = gay = gam = false;
+                    deystvie = 2;
                     temp_n -= Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
-                    minus = true;
-                    plus = gay = gam = false;
+                    deystvie = 2;
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
@@ -155,15 +148,13 @@ namespace NormalCalculator
             {
                 if (temp_n != 0)
                 {
-                    minus = gay = plus = false;
-                    gam = true;
+                    deystvie = 3;
                     temp_n *= Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
-                    minus = gay = plus = false;
-                    gam = true;
+                    deystvie = 3;
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
@@ -181,15 +172,13 @@ namespace NormalCalculator
             {
                 if (temp_n != 0)
                 {
-                    minus = gam = plus = false;
-                    gay = true;
+                    deystvie = 4;
                     temp_n /= Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
-                    minus = gam = plus = false;
-                    gay = true;
+                    deystvie = 4;
                     temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
@@ -204,33 +193,42 @@ namespace NormalCalculator
         {
             try
             {
-                if (plus)
+                switch (deystvie)
                 {
-                    double x = temp_n + Convert.ToDouble(TextPanelCalc.Text);
-                    TextPanelCalc.Text = x.ToString();
-                    plus = false;
-                    temp_n = 0;
-                }
-                if (minus)
-                {
-                    double x = temp_n - Convert.ToDouble(TextPanelCalc.Text);
-                    TextPanelCalc.Text = x.ToString();
-                    minus = false;
-                    temp_n = 0;
-                }
-                if (gam)
-                {
-                    double x = temp_n * Convert.ToDouble(TextPanelCalc.Text);
-                    TextPanelCalc.Text = x.ToString();
-                    gam = false;
-                    temp_n = 0;
-                }
-                if (gay)
-                {
-                    double x = temp_n / Convert.ToDouble(TextPanelCalc.Text);
-                    TextPanelCalc.Text = x.ToString();
-                    gay = false;
-                    temp_n = 0;
+                    case 1:
+                        {
+                            double x = temp_n + Convert.ToDouble(TextPanelCalc.Text);
+                            TextPanelCalc.Text = x.ToString();
+                            deystvie = 0;
+                            temp_n = 0;
+                            break;
+                        }
+                    case 2:
+                        {
+                            double x = temp_n - Convert.ToDouble(TextPanelCalc.Text);
+                            TextPanelCalc.Text = x.ToString();
+                            deystvie = 0;
+                            temp_n = 0;
+                            break;
+                        }
+                    case 3:
+                        {
+                            double x = temp_n * Convert.ToDouble(TextPanelCalc.Text);
+                            TextPanelCalc.Text = x.ToString();
+                            deystvie = 0;
+                            temp_n = 0;
+                            break;
+                        }
+                    case 4:
+                        {
+                            double x = temp_n / Convert.ToDouble(TextPanelCalc.Text);
+                            TextPanelCalc.Text = x.ToString();
+                            deystvie = 0;
+                            temp_n = 0;
+                            break;
+                        }
+                    default:
+                        break;
                 }
             }
             catch (Exception)
@@ -243,7 +241,7 @@ namespace NormalCalculator
         {
             try
             {
-                plus = minus = gam = gay = false;
+                deystvie = 0;
                 TextPanelCalc.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(TextPanelCalc.Text)));
             }
             catch (Exception)
@@ -254,7 +252,7 @@ namespace NormalCalculator
 
         private void NumPI_Click(object sender, RoutedEventArgs e)
         {
-            plus = minus = gam = gay = false;
+            deystvie = 0;
             TextPanelCalc.Text = "3,1415926535897932384";
         }
 
