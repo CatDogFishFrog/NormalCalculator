@@ -10,7 +10,7 @@ namespace NormalCalculator
         byte deystvie;
         double temp_n;
 
-        public double Temp_n { get => Temp_n; set => Temp_n = value; }
+        //public double Temp_n { get => Temp_n; set => Temp_n = value; }
         public MainPage()
         {
             this.InitializeComponent();
@@ -82,7 +82,7 @@ namespace NormalCalculator
         private void CleanEvr_Click(object sender, RoutedEventArgs e)
         {
             TextPanelCalc.Text = "";
-            Temp_n = 0;
+            temp_n = 0;
             deystvie = 0;
         }
 
@@ -90,16 +90,16 @@ namespace NormalCalculator
         {
             try
             {
-                if (Temp_n != 0)
+                if (temp_n != 0)
                 {
                     deystvie = 1;
-                    Temp_n += Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n += Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 1;
-                    Temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
             }
@@ -113,16 +113,16 @@ namespace NormalCalculator
         {
             try
             {
-                if (Temp_n != 0)
+                if (temp_n != 0)
                 {
                     deystvie = 2;
-                    Temp_n -= Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n -= Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 2;
-                    Temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
             }
@@ -136,16 +136,16 @@ namespace NormalCalculator
         {
             try
             {
-                if (Temp_n != 0)
+                if (temp_n != 0)
                 {
                     deystvie = 3;
-                    Temp_n *= Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n *= Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 3;
-                    Temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
             }
@@ -160,16 +160,16 @@ namespace NormalCalculator
 
             try
             {
-                if (Temp_n != 0)
+                if (temp_n != 0)
                 {
                     deystvie = 4;
-                    Temp_n /= Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n /= Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 4;
-                    Temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
                     TextPanelCalc.Text = "";
                 }
             }
@@ -187,34 +187,34 @@ namespace NormalCalculator
                 {
                     case 1:
                         {
-                            double x = Temp_n + Convert.ToDouble(TextPanelCalc.Text);
+                            double x = temp_n + Convert.ToDouble(TextPanelCalc.Text);
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            Temp_n = 0;
+                            temp_n = 0;
                             break;
                         }
                     case 2:
                         {
-                            double x = Temp_n - Convert.ToDouble(TextPanelCalc.Text);
+                            double x = temp_n - Convert.ToDouble(TextPanelCalc.Text);
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            Temp_n = 0;
+                            temp_n = 0;
                             break;
                         }
                     case 3:
                         {
-                            double x = Temp_n * Convert.ToDouble(TextPanelCalc.Text);
+                            double x = temp_n * Convert.ToDouble(TextPanelCalc.Text);
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            Temp_n = 0;
+                            temp_n = 0;
                             break;
                         }
                     case 4:
                         {
-                            double x = Temp_n / Convert.ToDouble(TextPanelCalc.Text);
+                            double x =temp_n / Convert.ToDouble(TextPanelCalc.Text);
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            Temp_n = 0;
+                            temp_n = 0;
                             break;
                         }
                     default:
