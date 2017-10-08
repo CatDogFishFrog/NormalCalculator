@@ -10,7 +10,6 @@ namespace NormalCalculator
         byte deystvie;
         double temp_n;
 
-        //public double Temp_n { get => Temp_n; set => Temp_n = value; }
         public MainPage()
         {
             this.InitializeComponent();
