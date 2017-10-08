@@ -132,17 +132,15 @@ namespace NormalCalculator.NormalCalculator_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[3];
             _typeNameTable[0] = "NormalCalculator.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Double";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[3];
             _typeTable[0] = typeof(global::NormalCalculator.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::System.Double);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -192,7 +190,6 @@ namespace NormalCalculator.NormalCalculator_XamlTypeInfo
             case 0:   //  NormalCalculator.MainPage
                 userType = new global::NormalCalculator.NormalCalculator_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_MainPage;
-                userType.AddMemberName("Temp_n");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -204,40 +201,16 @@ namespace NormalCalculator.NormalCalculator_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::NormalCalculator.NormalCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
-
-            case 3:   //  Double
-                xamlType = new global::NormalCalculator.NormalCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
             }
             return xamlType;
         }
 
 
-        private object get_0_MainPage_Temp_n(object instance)
-        {
-            var that = (global::NormalCalculator.MainPage)instance;
-            return that.Temp_n;
-        }
-        private void set_0_MainPage_Temp_n(object instance, object Value)
-        {
-            var that = (global::NormalCalculator.MainPage)instance;
-            that.Temp_n = (global::System.Double)Value;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::NormalCalculator.NormalCalculator_XamlTypeInfo.XamlMember xamlMember = null;
-            global::NormalCalculator.NormalCalculator_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "NormalCalculator.MainPage.Temp_n":
-                userType = (global::NormalCalculator.NormalCalculator_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NormalCalculator.MainPage");
-                xamlMember = new global::NormalCalculator.NormalCalculator_XamlTypeInfo.XamlMember(this, "Temp_n", "Double");
-                xamlMember.Getter = get_0_MainPage_Temp_n;
-                xamlMember.Setter = set_0_MainPage_Temp_n;
-                break;
-            }
+            // No Local Properties
             return xamlMember;
         }
     }

@@ -344,7 +344,7 @@ namespace NormalCalculator
 
         private void Nitific_Click(object sender, RoutedEventArgs e)
         {
-            
+            TextPanelCalc.Text = "Ну нет функции у этой кнопки. не придумал еще.";
         }
     }
 }

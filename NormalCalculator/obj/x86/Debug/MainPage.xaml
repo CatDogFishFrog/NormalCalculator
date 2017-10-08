@@ -37,7 +37,8 @@
         <Button x:ConnectionId='28' x:Name="Zero" Content="0" HorizontalAlignment="Left" Margin="105,359,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48"                   />
         <Button x:ConnectionId='29' x:Name="Koma" Content="," HorizontalAlignment="Left" Margin="200,359,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48"                   />
         <Button x:ConnectionId='30' Content="=" HorizontalAlignment="Left" Margin="295,359,0,0" VerticalAlignment="Top" Height="90" Width="185" FontSize="48"                     />
-
+        <Button x:ConnectionId='31' x:Name="Nitific" Content="Уведомление" HorizontalAlignment="Left" Margin="485,359,0,0" VerticalAlignment="Top" Height="90" Width="320" FontSize="36"                      />
+        
     </Grid>
 </Page>
 
