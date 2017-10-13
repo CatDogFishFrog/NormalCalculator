@@ -10,7 +10,7 @@ namespace NormalCalculator
         byte deystvie;
         double temp;
         bool clean_panel=false;
-
+        bool clean_strokaSos=false;
 
         public MainPage()
         {
@@ -24,6 +24,11 @@ namespace NormalCalculator
                 TextPanelCalc.Text = "";
                 clean_panel = false;
             }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
+            }
             TextPanelCalc.Text += '1';
         }
         private void Num2_Click(object sender, RoutedEventArgs e)
@@ -32,6 +37,11 @@ namespace NormalCalculator
             {
                 TextPanelCalc.Text = "";
                 clean_panel = false;
+            }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
             }
             TextPanelCalc.Text += '2';
         }
@@ -42,6 +52,11 @@ namespace NormalCalculator
                 TextPanelCalc.Text = "";
                 clean_panel = false;
             }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
+            }
             TextPanelCalc.Text += '3';
         }
         private void Num4_Click(object sender, RoutedEventArgs e)
@@ -50,6 +65,11 @@ namespace NormalCalculator
             {
                 TextPanelCalc.Text = "";
                 clean_panel = false;
+            }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
             }
             TextPanelCalc.Text += '4';
         }
@@ -60,6 +80,11 @@ namespace NormalCalculator
                 TextPanelCalc.Text = "";
                 clean_panel = false;
             }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
+            }
             TextPanelCalc.Text += '5';
         }        
         private void Num6_Click(object sender, RoutedEventArgs e)
@@ -68,6 +93,11 @@ namespace NormalCalculator
             {
                 TextPanelCalc.Text = "";
                 clean_panel = false;
+            }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
             }
             TextPanelCalc.Text += '6';
         }
@@ -78,6 +108,11 @@ namespace NormalCalculator
                 TextPanelCalc.Text = "";
                 clean_panel = false;
             }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
+            }
             TextPanelCalc.Text += '7';
         }
         private void Num8_Click(object sender, RoutedEventArgs e)
@@ -86,6 +121,11 @@ namespace NormalCalculator
             {
                 TextPanelCalc.Text = "";
                 clean_panel = false;
+            }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
             }
             TextPanelCalc.Text += '8';
         }
@@ -96,6 +136,11 @@ namespace NormalCalculator
                 TextPanelCalc.Text = "";
                 clean_panel = false;
             }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
+            }
             TextPanelCalc.Text += '9';
         }
         private void Zero_Click(object sender, RoutedEventArgs e)
@@ -104,6 +149,11 @@ namespace NormalCalculator
             {
                 TextPanelCalc.Text = "";
                 clean_panel = false;
+            }
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
             }
             TextPanelCalc.Text += '0';
         }
@@ -124,6 +174,16 @@ namespace NormalCalculator
 
         private void Koma_Click(object sender, RoutedEventArgs e)
         {
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
+            }
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
             if (TextPanelCalc.Text.Contains(",")) { return; }
             else {
                 if(TextPanelCalc.Text == "")
@@ -143,7 +203,12 @@ namespace NormalCalculator
             {
                 clean_panel = true;
                 double x;
-                if(deystvie != 0)
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
+                if (deystvie != 0)
                 {
                     
                     switch (deystvie)
@@ -241,6 +306,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (temp != 0)
                 {
                     deystvie = 1;
@@ -280,6 +350,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (temp != 0)
                 {
                     deystvie = 2;
@@ -319,6 +394,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (temp != 0)
                 {
                     deystvie = 3;
@@ -359,6 +439,11 @@ namespace NormalCalculator
 
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (temp != 0)
                 {
                     deystvie = 4;
@@ -398,6 +483,7 @@ namespace NormalCalculator
         {
             try
             {
+                clean_strokaSos = true;
                 switch (deystvie)
                 {
                     case 1:
@@ -412,6 +498,7 @@ namespace NormalCalculator
                                 StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
                             }
                             TextPanelCalc.Text = x.ToString();
+                            HistoryBox.Text += StrokaSostoyaniya.Text + "\n";
                             deystvie = 0;
                             temp = 0;
                             break;
@@ -428,6 +515,7 @@ namespace NormalCalculator
                                 StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
                             }
                             TextPanelCalc.Text = x.ToString();
+                            HistoryBox.Text += StrokaSostoyaniya.Text + "\n";
                             deystvie = 0;
                             temp = 0;
                             break;
@@ -444,6 +532,7 @@ namespace NormalCalculator
                                 StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
                             }
                             TextPanelCalc.Text = x.ToString();
+                            HistoryBox.Text += StrokaSostoyaniya.Text + "\n";
                             deystvie = 0;
                             temp = 0;
                             break;
@@ -460,6 +549,7 @@ namespace NormalCalculator
                                 StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
                             }
                             TextPanelCalc.Text = x.ToString();
+                            HistoryBox.Text += StrokaSostoyaniya.Text + "\n";
                             deystvie = 0;
                             temp = 0;
                             break;
@@ -478,6 +568,12 @@ namespace NormalCalculator
         {
             try
             {
+                clean_panel = true;
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 deystvie = 0;
                 StrokaSostoyaniya.Text += "sqrt(" + TextPanelCalc.Text + ')';
                 TextPanelCalc.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(TextPanelCalc.Text)));
@@ -490,6 +586,11 @@ namespace NormalCalculator
 
         private void NumPI_Click(object sender, RoutedEventArgs e)
         {
+            if (clean_strokaSos)
+            {
+                StrokaSostoyaniya.Text = "";
+                clean_strokaSos = false;
+            }
             deystvie = 0;
             TextPanelCalc.Text = "3,1415926535897932384";
         }
@@ -498,6 +599,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (TextPanelCalc.Text != "")
                 {
                     TextPanelCalc.Text = Convert.ToString(Math.Round(Math.Sin(Convert.ToDouble(TextPanelCalc.Text) * Math.PI / 180), 3));
@@ -514,6 +620,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (TextPanelCalc.Text != "")
                 {
                     TextPanelCalc.Text = Convert.ToString(Math.Round(Math.Cos(Convert.ToDouble(TextPanelCalc.Text) * Math.PI / 180), 3));
@@ -530,6 +641,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (TextPanelCalc.Text != "")
                 {
                     TextPanelCalc.Text = Convert.ToString(Math.Round(Math.Tan(Convert.ToDouble(TextPanelCalc.Text) * Math.PI / 180), 3));
@@ -546,6 +662,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (TextPanelCalc.Text != "")
                 {
                     TextPanelCalc.Text = Convert.ToString(Math.Round(Math.Asin(Convert.ToDouble(TextPanelCalc.Text) * Math.PI / 180), 3));
@@ -562,6 +683,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (TextPanelCalc.Text != "")
                 {
                     TextPanelCalc.Text = Convert.ToString(Math.Round(Math.Acos(Convert.ToDouble(TextPanelCalc.Text) * Math.PI / 180), 3));
@@ -578,6 +704,11 @@ namespace NormalCalculator
         {
             try
             {
+                if (clean_strokaSos)
+                {
+                    StrokaSostoyaniya.Text = "";
+                    clean_strokaSos = false;
+                }
                 if (TextPanelCalc.Text != "")
                 {
                     TextPanelCalc.Text = Convert.ToString(Math.Round(Math.Atan(Convert.ToDouble(TextPanelCalc.Text) * Math.PI / 180), 3));

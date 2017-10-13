@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-13T17:15:09.432</Modified>
+      <Modified>2017-10-13T18:11:56.670</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\NormalCalculator.exe">
       <PackagePath>entrypoint\NormalCalculator.exe</PackagePath>
-      <Modified>2017-10-13T17:15:08.857</Modified>
+      <Modified>2017-10-13T18:11:56.093</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vadim\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -535,7 +535,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\NormalCalculator.xr.xml">
       <PackagePath>NormalCalculator.xr.xml</PackagePath>
-      <Modified>2017-10-12T09:41:01.134</Modified>
+      <Modified>2017-10-13T18:02:07.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-13T17:15:09.249</Modified>
+      <Modified>2017-10-13T18:11:56.500</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Debug\Core\NormalCalculator.exe">
       <PackagePath>NormalCalculator.exe</PackagePath>
-      <Modified>2017-10-13T17:15:09.428</Modified>
+      <Modified>2017-10-13T18:11:56.665</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
