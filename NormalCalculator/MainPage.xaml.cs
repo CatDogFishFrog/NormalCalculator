@@ -8,32 +8,105 @@ namespace NormalCalculator
     public sealed partial class MainPage : Page
     {
         byte deystvie;
-        double temp_n;
+        double temp;
+        bool clean_panel=false;
+
 
         public MainPage()
         {
             this.InitializeComponent();
         }
 
-        private void Num1_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "1";
-
-        private void Num2_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "2";
-
-        private void Num3_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "3";
-
-        private void Num4_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "4";
-
-        private void Num5_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "5";
-
-        private void Num6_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "6";
-
-        private void Num7_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "7";
-
-        private void Num8_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "8";
-
-        private void Num9_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "9";
-
-        private void Zero_Click(object sender, RoutedEventArgs e) => TextPanelCalc.Text += "0";
+        private void Num1_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '1';
+        }
+        private void Num2_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '2';
+        }
+        private void Num3_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '3';
+        }
+        private void Num4_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '4';
+        }
+        private void Num5_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '5';
+        }        
+        private void Num6_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '6';
+        }
+        private void Num7_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '7';
+        }
+        private void Num8_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '8';
+        }
+        private void Num9_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '9';
+        }
+        private void Zero_Click(object sender, RoutedEventArgs e)
+        {
+            if (clean_panel)
+            {
+                TextPanelCalc.Text = "";
+                clean_panel = false;
+            }
+            TextPanelCalc.Text += '0';
+        }
 
         private void PlusMinus_Click(object sender, RoutedEventArgs e)
         {
@@ -52,18 +125,96 @@ namespace NormalCalculator
         private void Koma_Click(object sender, RoutedEventArgs e)
         {
             if (TextPanelCalc.Text.Contains(",")) { return; }
-            else { TextPanelCalc.Text = (TextPanelCalc.Text + ","); }
+            else {
+                if(TextPanelCalc.Text == "")
+                {
+                    TextPanelCalc.Text = "0,";
+                }
+                else
+                {
+                    TextPanelCalc.Text += ',';
+                }
+            }
         }
 
         private void VKvadrateLol_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                double g = Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
-                deystvie = 0;
-                if (g > 1.8e300 || g < -1.8e300)
-                    TextPanelCalc.Text = "БЕСКОНЕЧНОСТЬ НЕ ПРЕДЕЛ!";
-                else TextPanelCalc.Text = Convert.ToString(g);
+                clean_panel = true;
+                double x;
+                if(deystvie != 0)
+                {
+                    
+                    switch (deystvie)
+                    {
+                        case 1:
+                            {
+                                if (TextPanelCalc.Text.Contains("-"))
+                                {
+                                    StrokaSostoyaniya.Text += '(' + TextPanelCalc.Text + ")^2";
+                                }
+                                else { StrokaSostoyaniya.Text += TextPanelCalc.Text + "^2"; }
+                                x = temp + Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
+                                TextPanelCalc.Text = x.ToString();
+                                deystvie = 0;
+                                temp = 0;
+                                break;
+                            }
+                        case 2:
+                            {
+                                if (TextPanelCalc.Text.Contains("-"))
+                                {
+                                    StrokaSostoyaniya.Text += '(' + TextPanelCalc.Text + ")^2";
+                                }
+                                else { StrokaSostoyaniya.Text += TextPanelCalc.Text + "^2"; }
+                                x = temp - Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
+                                TextPanelCalc.Text = x.ToString();
+                                deystvie = 0;
+                                temp = 0;
+                                break;
+                            }
+                        case 3:
+                            {
+                                if (TextPanelCalc.Text.Contains("-"))
+                                {
+                                    StrokaSostoyaniya.Text += '(' + TextPanelCalc.Text + ")^2";
+                                }
+                                else { StrokaSostoyaniya.Text += TextPanelCalc.Text + "^2"; }
+                                x = temp * Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
+                                TextPanelCalc.Text = x.ToString();
+                                deystvie = 0;
+                                temp = 0;
+                                break;
+                            }
+                        case 4:
+                            {
+                                if (TextPanelCalc.Text.Contains("-"))
+                                {
+                                    StrokaSostoyaniya.Text += '(' + TextPanelCalc.Text + ")^2";
+                                }
+                                else { StrokaSostoyaniya.Text += TextPanelCalc.Text + "^2"; }
+                                x = temp / Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
+                                TextPanelCalc.Text = x.ToString();
+                                deystvie = 0;
+                                temp = 0;
+                                break;
+                            }
+                        default:
+                            break;
+                    }
+                }
+                else
+                {
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += "(" + TextPanelCalc.Text + ")" + "^2";
+                    }
+                    else { StrokaSostoyaniya.Text += TextPanelCalc.Text + "^2"; }
+                    x = Math.Pow(Convert.ToDouble(TextPanelCalc.Text), 2);
+                    TextPanelCalc.Text = x.ToString();
+                    deystvie = 0;
+                }
             }
             catch (Exception)
             {
@@ -81,7 +232,8 @@ namespace NormalCalculator
         private void CleanEvr_Click(object sender, RoutedEventArgs e)
         {
             TextPanelCalc.Text = "";
-            temp_n = 0;
+            StrokaSostoyaniya.Text = "";
+            temp = 0;
             deystvie = 0;
         }
 
@@ -89,16 +241,32 @@ namespace NormalCalculator
         {
             try
             {
-                if (temp_n != 0)
+                if (temp != 0)
                 {
                     deystvie = 1;
-                    temp_n += Convert.ToDouble(TextPanelCalc.Text);
+                    temp += Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('('+TextPanelCalc.Text + ")+");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "+");
+                    }
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 1;
-                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp = Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('(' + TextPanelCalc.Text + ")+");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "+");
+                    }
                     TextPanelCalc.Text = "";
                 }
             }
@@ -112,16 +280,32 @@ namespace NormalCalculator
         {
             try
             {
-                if (temp_n != 0)
+                if (temp != 0)
                 {
                     deystvie = 2;
-                    temp_n -= Convert.ToDouble(TextPanelCalc.Text);
+                    temp -= Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('(' + TextPanelCalc.Text + ")-");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "-");
+                    }
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 2;
-                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp = Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('(' + TextPanelCalc.Text + ")-");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "-");
+                    }
                     TextPanelCalc.Text = "";
                 }
             }
@@ -135,16 +319,32 @@ namespace NormalCalculator
         {
             try
             {
-                if (temp_n != 0)
+                if (temp != 0)
                 {
                     deystvie = 3;
-                    temp_n *= Convert.ToDouble(TextPanelCalc.Text);
+                    temp *= Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('(' + TextPanelCalc.Text + ")×");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "×");
+                    }
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 3;
-                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp = Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('(' + TextPanelCalc.Text + ")×");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "×");
+                    }
                     TextPanelCalc.Text = "";
                 }
             }
@@ -159,16 +359,32 @@ namespace NormalCalculator
 
             try
             {
-                if (temp_n != 0)
+                if (temp != 0)
                 {
                     deystvie = 4;
-                    temp_n /= Convert.ToDouble(TextPanelCalc.Text);
+                    temp /= Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('(' + TextPanelCalc.Text + ")/");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "/");
+                    }
                     TextPanelCalc.Text = "";
                 }
                 else
                 {
                     deystvie = 4;
-                    temp_n = Convert.ToDouble(TextPanelCalc.Text);
+                    temp = Convert.ToDouble(TextPanelCalc.Text);
+                    if (TextPanelCalc.Text.Contains("-"))
+                    {
+                        StrokaSostoyaniya.Text += ('(' + TextPanelCalc.Text + ")/");
+                    }
+                    else
+                    {
+                        StrokaSostoyaniya.Text += (TextPanelCalc.Text + "/");
+                    }
                     TextPanelCalc.Text = "";
                 }
             }
@@ -186,34 +402,66 @@ namespace NormalCalculator
                 {
                     case 1:
                         {
-                            double x = temp_n + Convert.ToDouble(TextPanelCalc.Text);
+                            double x = temp + Convert.ToDouble(TextPanelCalc.Text);
+                            if (TextPanelCalc.Text.Contains("-"))
+                            {
+                                StrokaSostoyaniya.Text += '('+TextPanelCalc.Text + ")=" + x;
+                            }
+                            else
+                            {
+                                StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
+                            }
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            temp_n = 0;
+                            temp = 0;
                             break;
                         }
                     case 2:
                         {
-                            double x = temp_n - Convert.ToDouble(TextPanelCalc.Text);
+                            double x = temp - Convert.ToDouble(TextPanelCalc.Text);
+                            if (TextPanelCalc.Text.Contains("-"))
+                            {
+                                StrokaSostoyaniya.Text += '(' + TextPanelCalc.Text + ")=" + x;
+                            }
+                            else
+                            {
+                                StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
+                            }
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            temp_n = 0;
+                            temp = 0;
                             break;
                         }
                     case 3:
                         {
-                            double x = temp_n * Convert.ToDouble(TextPanelCalc.Text);
+                            double x = temp * Convert.ToDouble(TextPanelCalc.Text);
+                            if (TextPanelCalc.Text.Contains("-"))
+                            {
+                                StrokaSostoyaniya.Text += '(' + TextPanelCalc.Text + ")=" + x;
+                            }
+                            else
+                            {
+                                StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
+                            }
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            temp_n = 0;
+                            temp = 0;
                             break;
                         }
                     case 4:
                         {
-                            double x =temp_n / Convert.ToDouble(TextPanelCalc.Text);
+                            double x =temp / Convert.ToDouble(TextPanelCalc.Text);
+                            if (TextPanelCalc.Text.Contains("-"))
+                            {
+                                StrokaSostoyaniya.Text += '(' + TextPanelCalc.Text + ")=" + x;
+                            }
+                            else
+                            {
+                                StrokaSostoyaniya.Text += TextPanelCalc.Text + "=" + x;
+                            }
                             TextPanelCalc.Text = x.ToString();
                             deystvie = 0;
-                            temp_n = 0;
+                            temp = 0;
                             break;
                         }
                     default:
@@ -231,6 +479,7 @@ namespace NormalCalculator
             try
             {
                 deystvie = 0;
+                StrokaSostoyaniya.Text += "sqrt(" + TextPanelCalc.Text + ')';
                 TextPanelCalc.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(TextPanelCalc.Text)));
             }
             catch (Exception)

@@ -8,36 +8,38 @@
     mc:Ignorable="d">
 
     <Grid x:Name="MainForm" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
-        <TextBox x:Name="TextPanelCalc" Margin="10,10,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="59" FontSize="36"/>
-        <Button x:Name="Num1" Content="1" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num1_Click"/>
-        <Button x:Name="Num2" Content="2" HorizontalAlignment="Left" Margin="105,264,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num2_Click"/>
-        <Button x:Name="Num3" Content="3" HorizontalAlignment="Left" Margin="200,264,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num3_Click"/>
-        <Button x:Name="Num4" Content="4" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num4_Click"/>
-        <Button x:Name="Num5" Content="5" HorizontalAlignment="Left" Margin="105,169,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num5_Click"/>
-        <Button x:Name="Num6" Content="6" HorizontalAlignment="Left" Margin="200,169,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num6_Click"/>
-        <Button x:Name="Num7" Content="7" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num7_Click"/>
-        <Button x:Name="Num8" Content="8" HorizontalAlignment="Left" Margin="105,74,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num8_Click"/>
-        <Button x:Name="Num9" Content="9" HorizontalAlignment="Left" Margin="200,74,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num9_Click"/>
-        <Button x:Name="PlusMinus" Content="±" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="PlusMinus_Click"/>
-        <Button x:Name="VKvadrateLol" Content="x²" HorizontalAlignment="Left" Margin="295,74,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="VKvadrateLol_Click"/>
-        <Button x:Name="CleanText" Content="C" HorizontalAlignment="Left" Margin="390,74,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="CleanText_Click"/>
-        <Button x:Name="CleanEvr" Content="CE" HorizontalAlignment="Left" Margin="485,74,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="CleanEvr_Click"/>
-        <Button x:Name="Sinus" Content="Sin" HorizontalAlignment="Left" Margin="580,74,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="36" Click="Sinus_Click"/>
-        <Button x:Name="ArcSinus" Content="ArcSin" HorizontalAlignment="Left" Margin="675,74,0,0" VerticalAlignment="Top" Height="90" Width="130" FontSize="36" Click="ArcSinus_Click"/>
-        <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Margin="295,169,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Plus_Click"/>
-        <Button x:Name="Multiply" Content="×" HorizontalAlignment="Left" Margin="390,169,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Multiply_Click"/>
-        <Button x:Name="KorenKvadrat" Content="√" HorizontalAlignment="Left" Margin="485,169,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="KorenKvadrat_Click"/>
-        <Button x:Name="Cosinus" Content="Cos" HorizontalAlignment="Left" Margin="580,169,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="36" Click="Cosinus_Click"/>
-        <Button x:Name="ArcCosinus" Content="ArcCos" HorizontalAlignment="Left" Margin="675,169,0,0" VerticalAlignment="Top" Height="90" Width="130" FontSize="36" Click="ArcCosinus_Click"/>
-        <Button x:Name="Minus" Content="-" HorizontalAlignment="Left" Margin="295,264,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Minus_Click"/>
-        <Button x:Name="Delenie" Content="÷" HorizontalAlignment="Left" Height="90" Margin="390,264,0,0" VerticalAlignment="Top" Width="90" FontSize="48" Click="Delenie_Click"/>
-        <Button x:Name="NumPI" Content="π" HorizontalAlignment="Left" Margin="485,264,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" FontStyle="Italic" Click="NumPI_Click"/>
-        <Button x:Name="Tangens" Content="Tan" HorizontalAlignment="Left" Margin="580,264,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="36" Click="Tangens_Click"/>
-        <Button x:Name="ArcTangens" Content="ArcTan" HorizontalAlignment="Left" Margin="675,264,0,0" VerticalAlignment="Top" Height="90" Width="130" FontSize="36" Click="ArcTangens_Click"/>
-        <Button x:Name="Zero" Content="0" HorizontalAlignment="Left" Margin="105,359,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Zero_Click"/>
-        <Button x:Name="Koma" Content="," HorizontalAlignment="Left" Margin="200,359,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Koma_Click"/>
-        <Button Content="=" HorizontalAlignment="Left" Margin="295,359,0,0" VerticalAlignment="Top" Height="90" Width="185" FontSize="48" Click="Button_Click"/>
-        <Button x:Name="Nitific" Content="Уведомление" HorizontalAlignment="Left" Margin="485,359,0,0" VerticalAlignment="Top" Height="90" Width="320" FontSize="36" Click="Nitific_Click"/>
-        
+        <TextBox x:Name="TextPanelCalc" Margin="10,72,11,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="59" FontSize="36"/>
+        <Button x:Name="Num1" Content="1" HorizontalAlignment="Left" Margin="9,326,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num1_Click"/>
+        <Button x:Name="Num2" Content="2" HorizontalAlignment="Left" Margin="104,326,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num2_Click"/>
+        <Button x:Name="Num3" Content="3" HorizontalAlignment="Left" Margin="199,326,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num3_Click"/>
+        <Button x:Name="Num4" Content="4" HorizontalAlignment="Left" Margin="9,231,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num4_Click"/>
+        <Button x:Name="Num5" Content="5" HorizontalAlignment="Left" Margin="104,231,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num5_Click"/>
+        <Button x:Name="Num6" Content="6" HorizontalAlignment="Left" Margin="199,231,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num6_Click"/>
+        <Button x:Name="Num7" Content="7" HorizontalAlignment="Left" Margin="9,136,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num7_Click"/>
+        <Button x:Name="Num8" Content="8" HorizontalAlignment="Left" Margin="104,136,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num8_Click"/>
+        <Button x:Name="Num9" Content="9" HorizontalAlignment="Left" Margin="199,136,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Num9_Click"/>
+        <Button x:Name="PlusMinus" Content="±" HorizontalAlignment="Left" Margin="9,421,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="PlusMinus_Click"/>
+        <Button x:Name="VKvadrateLol" Content="x²" HorizontalAlignment="Left" Margin="294,136,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="VKvadrateLol_Click"/>
+        <Button x:Name="CleanText" Content="C" HorizontalAlignment="Left" Margin="389,136,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="CleanText_Click"/>
+        <Button x:Name="CleanEvr" Content="CE" HorizontalAlignment="Left" Margin="484,136,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="CleanEvr_Click"/>
+        <Button x:Name="Sinus" Content="Sin" HorizontalAlignment="Left" Margin="579,136,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="36" Click="Sinus_Click"/>
+        <Button x:Name="ArcSinus" Content="ArcSin" HorizontalAlignment="Left" Margin="674,136,0,0" VerticalAlignment="Top" Height="90" Width="130" FontSize="36" Click="ArcSinus_Click"/>
+        <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Margin="294,231,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Plus_Click"/>
+        <Button x:Name="Multiply" Content="×" HorizontalAlignment="Left" Margin="389,231,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Multiply_Click"/>
+        <Button x:Name="KorenKvadrat" Content="√" HorizontalAlignment="Left" Margin="484,231,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="KorenKvadrat_Click"/>
+        <Button x:Name="Cosinus" Content="Cos" HorizontalAlignment="Left" Margin="579,231,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="36" Click="Cosinus_Click"/>
+        <Button x:Name="ArcCosinus" Content="ArcCos" HorizontalAlignment="Left" Margin="674,231,0,0" VerticalAlignment="Top" Height="90" Width="130" FontSize="36" Click="ArcCosinus_Click"/>
+        <Button x:Name="Minus" Content="-" HorizontalAlignment="Left" Margin="294,326,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Minus_Click"/>
+        <Button x:Name="Delenie" Content="÷" HorizontalAlignment="Left" Height="90" Margin="389,326,0,0" VerticalAlignment="Top" Width="90" FontSize="48" Click="Delenie_Click"/>
+        <Button x:Name="NumPI" Content="π" HorizontalAlignment="Left" Margin="484,326,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" FontStyle="Italic" Click="NumPI_Click"/>
+        <Button x:Name="Tangens" Content="Tan" HorizontalAlignment="Left" Margin="579,326,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="36" Click="Tangens_Click"/>
+        <Button x:Name="ArcTangens" Content="ArcTan" HorizontalAlignment="Left" Margin="674,326,0,0" VerticalAlignment="Top" Height="90" Width="130" FontSize="36" Click="ArcTangens_Click"/>
+        <Button x:Name="Zero" Content="0" HorizontalAlignment="Left" Margin="104,421,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Zero_Click"/>
+        <Button x:Name="Koma" Content="," HorizontalAlignment="Left" Margin="199,421,0,0" VerticalAlignment="Top" Height="90" Width="90" FontSize="48" Click="Koma_Click"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="294,421,0,0" VerticalAlignment="Top" Height="90" Width="185" FontSize="48" Click="Button_Click"/>
+        <Button x:Name="Nitific" Content="Уведомление" HorizontalAlignment="Left" Margin="484,421,0,0" VerticalAlignment="Top" Height="90" Width="320" FontSize="36" Click="Nitific_Click"/>
+        <ListView x:Name="HistoryBox" HorizontalAlignment="Left" Height="373" Margin="809,138,0,0" VerticalAlignment="Top" Width="333"/>
+        <TextBlock x:Name="StrokaSostoyaniya" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="1899" FontSize="36" Text=""/>
+
     </Grid>
 </Page>
