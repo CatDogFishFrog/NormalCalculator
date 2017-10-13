@@ -791,6 +791,15 @@ namespace __Interop
 		internal static int StdCall__14(
 					global::System.IntPtr pfn, 
 					void* pthis, 
+					double arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__15(
+					global::System.IntPtr pfn, 
+					void* pthis, 
 					global::Windows.Foundation.Point arg0, 
 					global::Windows.Foundation.Rect arg1, 
 					void* arg2)
@@ -799,7 +808,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__15(
+		internal static int StdCall__16(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -809,7 +818,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__16(
+		internal static int StdCall__17(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Point arg0, 
@@ -819,7 +828,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__17(
+		internal static int StdCall__18(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -830,22 +839,13 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__18<TArg0, TArg1>(
+		internal static void HasThisCall__19<TArg0, TArg1>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0, 
 					TArg1 arg1)
 		{
 			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static int StdCall__19(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					double arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
 		}
 
 		internal static int StdCall__20(

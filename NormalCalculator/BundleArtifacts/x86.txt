@@ -1,2 +1,2 @@
-MainPackage=C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Release\NormalCalculator_1.3.1.0_x86.appx
-SymbolPackage=C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\AppPackages\NormalCalculator_1.3.1.0_Test\NormalCalculator_1.3.1.0_x86.appxsym
+MainPackage=C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x86\Release\NormalCalculator_1.5.4.0_x86.appx
+SymbolPackage=C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\AppPackages\NormalCalculator_1.5.4.0_Test\NormalCalculator_1.5.4.0_x86.appxsym

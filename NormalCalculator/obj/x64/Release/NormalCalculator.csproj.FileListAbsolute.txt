@@ -418,16 +418,3 @@ C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj
 C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
 C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.pdb
 C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\NormalCalculator.csprojResolveAssemblyReference.cache
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x64\Release\Microsoft.Toolkit.Uwp.Notifications.dll
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\bin\x64\Release\Microsoft.Toolkit.Uwp.Notifications.pdb
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\in\Microsoft.Toolkit.Uwp.Notifications.pdb
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\in\Microsoft.Toolkit.Uwp.Notifications.dll
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Uwp.Notifications.ildll
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Uwp.Notifications.ilpdb
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Tasks.Extensions.ildll
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\ILTransformed\System.Threading.Tasks.Extensions.ilpdb
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\ILTransformed\System.Xml.ReaderWriter.ildll
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\ILTransformed\System.Xml.ReaderWriter.ilpdb
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\PreMergeILTransformed.ILTransformTask.repro
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\Microsoft.Toolkit.Uwp.Notifications.dll
-C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\Microsoft.Toolkit.Uwp.Notifications.pdb

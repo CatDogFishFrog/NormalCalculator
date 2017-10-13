@@ -1,0 +1,1 @@
+C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\NormalCalculator.csproj;arm

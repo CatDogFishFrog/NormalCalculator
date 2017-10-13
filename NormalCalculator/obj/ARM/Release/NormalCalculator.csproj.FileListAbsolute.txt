@@ -417,3 +417,4 @@ C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj
 C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\ARM\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\ARM\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
 C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\ARM\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.pdb
+C:\Install\Projects\Visual Studio Projects\NormalCalculator\NormalCalculator\obj\ARM\Release\NormalCalculator.csprojResolveAssemblyReference.cache
