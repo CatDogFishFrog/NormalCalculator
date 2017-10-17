@@ -39,7 +39,7 @@
         <Button x:ConnectionId='30' Content="=" HorizontalAlignment="Left" Margin="294,421,0,0" VerticalAlignment="Top" Height="90" Width="185" FontSize="48"                     />
         <Button x:ConnectionId='31' x:Name="Nitific" Content="Уведомление" HorizontalAlignment="Left" Margin="484,421,0,0" VerticalAlignment="Top" Height="90" Width="320" FontSize="36"                      />
         <TextBlock x:ConnectionId='32' x:Name="StrokaSostoyaniya" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="1899" FontSize="36" Text=""/>
-        <TextBlock x:ConnectionId='33' x:Name="HistoryBox" Margin="809,136,10,10" TextWrapping="Wrap" Text="" FontSize="20" Opacity="0.9" FlowDirection="RightToLeft"/>
+        <TextBlock x:ConnectionId='33' x:Name="HistoryBox" Margin="809,136,10,10" TextWrapping="Wrap" Text="" FontSize="20" Opacity="0.9"/>
 
     </Grid>
 </Page>

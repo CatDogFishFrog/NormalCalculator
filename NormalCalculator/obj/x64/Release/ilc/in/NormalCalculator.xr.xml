@@ -42,7 +42,6 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Text" />
       <RootProperty Name="Opacity" />
-      <RootProperty Name="FlowDirection" />
     </RootType>
     <RootType FullName="NormalCalculator.MainPage" />
   </Roots.RootTypes>
