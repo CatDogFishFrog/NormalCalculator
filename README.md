@@ -1,12 +1,23 @@
 # NormalCalculator
-Короче, это калькулятор!
-Он может делать 2 + 2 и не только
-Там даже есть синусы и косинусы
-И тангенсы!
-И строка состояния
-И история
-И кнопка очистки!
-И еще одна кнопка очистки.
-И там всё продумано!
-Ну не совсем всё
-Ну я короче старался
+
+In short, it's a calculator!
+
+He can do 2 + 2 and more
+
+There are even sines and cosines
+
+And tangents!
+
+And the status bar
+
+And history
+
+And a clear button!
+
+And another clean button.
+
+And everything is well thought out!
+
+Well, not quite all.
+
+I tried hard
